@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="47dp"
+    android:padding="1dp"
+    >
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:gravity="top|center"
+        android:background="@drawable/boder_celender"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tienchi"
+        android:layout_width="70dp"
+        android:layout_height="13dp"
+        android:textSize="10dp"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingHorizontal="5dp"
+        android:layout_alignParentBottom="true"
+        />
+    <TextView
+        android:id="@+id/tien_thu"
+        android:layout_width="70dp"
+        android:layout_height="13dp"
+        android:paddingHorizontal="5dp"
+        android:textSize="10dp"
+        android:textColor="@color/blue"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_above="@+id/tienchi"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

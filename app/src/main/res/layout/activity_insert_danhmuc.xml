@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Insert_danhmuc">
+
+    <RelativeLayout
+        android:id="@+id/headerr"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shadow"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back_insert"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_circle_left_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_insert"
+            android:text="Trở lại"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Chỉnh sửa danh mục thu"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/hintDM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerr"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Tên"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtInsert"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boder_layout"
+            android:hint="Nhập tên danh mục"
+            android:paddingHorizontal="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hintDM"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Chọn biểu tượng"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <GridView
+        android:id="@+id/viewInsert"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/chon"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:numColumns="4"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewInsert"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#1ADCC4"
+        android:text="Insert"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

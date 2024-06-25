@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateDMChi.Update_icon_DMChi">
+    <RelativeLayout
+        android:id="@+id/headerrdm_chi"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="5dp"
+        android:background="#FFFFFF">
+        <ImageView
+            android:id="@+id/back_insert"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_circle_left_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_insert"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text="Back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Thêm danh mục"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerrdm_chi"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên"
+            android:layout_marginLeft="10dp"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/edtInsert_chi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:paddingHorizontal="10dp"
+            android:textSize="18dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#002BFF"
+            android:background="@drawable/boder_layout"
+            android:hint="Nhập tên danh mục"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn biểu tượng"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/text2"
+        android:textColor="#0C0C0C"
+        android:layout_marginTop="10dp"
+        />
+    <GridView
+        android:id="@+id/viewInsert_chi"
+        android:layout_width="390dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:numColumns="4"
+        android:layout_below="@+id/chon"
+        android:verticalSpacing="10dp"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        />
+
+    <Button
+        android:id="@+id/btnInsert_chi"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewInsert_chi"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#1ADCC4"
+        android:text="Insert"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+
+
+
+</RelativeLayout>

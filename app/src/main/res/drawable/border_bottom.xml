@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FFFFFF" /> <!-- Màu nền trong suốt -->
+    <stroke
+        android:color="#000000" /> <!-- Không có viền ở các cạnh -->
+    <padding
+        android:bottom="2dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp" /> <!-- Chỉ có viền ở phía dưới -->
+</shape>

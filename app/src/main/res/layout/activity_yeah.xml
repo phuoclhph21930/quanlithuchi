@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actiity_Khac.YeahActivity">
+    <RelativeLayout
+        android:id="@+id/headerr"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shadow">
+        <ImageView
+            android:id="@+id/back_insert"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_circle_left_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_insert"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text="Khác" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Báo cáo trong năm"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/headerYeah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/headerr"
+        android:layout_margin="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgtruocReportYeah"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            />
+        <TextView
+            android:id="@+id/dateReportMonthYeah"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/boder_layout"
+
+            />
+        <ImageView
+            android:id="@+id/imgnextReportYeah"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#615858"
+        android:layout_below="@+id/headerYeah"
+        >
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabbarLayoutYeahh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="center" />
+
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager_TabYeahac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab"
+        />
+</RelativeLayout>
